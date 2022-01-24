@@ -1,5 +1,5 @@
 {
-  "name": "notification-bot",
+  "name": "discord-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,20 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^13.5.0",
-    "dotenv": "^10.0.0"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Uyamikun/discord-bot.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Uyamikun/discord-bot/issues"
   },
-  "homepage": "https://github.com/Uyamikun/discord-bot#readme"
+  "homepage": "https://github.com/Uyamikun/discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^14.2.0"
+  }
 }
