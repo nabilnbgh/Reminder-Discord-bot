@@ -15,8 +15,8 @@ client.on('ready',() => {
     while(true){
         if(seconds === 10 || seconds === 10 || seconds || 30){
             sendChannel.send("<@330683045684445190> Login Hoyolab");
-        };
-    };
+        }
+    }
     
 });
 client.login(process.env.DISCORD_TOKEN);
