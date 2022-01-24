@@ -8,14 +8,9 @@ const client = new Discord.Client({
 });
 
 client.on('ready',() => {
-    console.log(min);
+    console.log("client is ready");
     var sendChannel = client.channels.cache.find(channel => channel.id === '935200576273264650')
     sendChannel.send("<@330683045684445190> Login Hoyolab");
-
-    
-        
-    
-
 });
 client.login(process.env.DISCORD_TOKEN);
 
