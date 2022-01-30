@@ -13,7 +13,8 @@ client.on('ready',() => {
     var sendChannel = client.channels.cache.find(channel => channel.id === '935200576273264650')
     var seconds = date.getSeconds();
     console.log(seconds);
-    sendChannel.send("<@330683045684445190> Login Hoyolab sama event web");
+    sendChannel.send("<@330683045684445190> Login Hoyolab event web");
+    sendChannel.send("https://mhy.link/05ehQGA6");
     
 });
 client.login(process.env.DISCORD_TOKEN);
