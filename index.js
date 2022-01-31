@@ -19,9 +19,12 @@ client.on('ready',() => {
     let date = new Date();
     console.log("client is ready");
     var sendChannel = client.channels.cache.find(channel => channel.id === '935200576273264650')
-    var seconds = date.getSeconds();
-    sendChannel.send("<@330683045684445190> Login Hoyolab event web");
-    // sendChannel.send("https://mhy.link/05ehQGA6");
+    var hour = date.getHours();
+    if(hour === 10){
+        sendChannel.send("<@330683045684445190> Login Hoyolab event web");
+        sendChannel.send("https://mhy.link/05ehQGA6");
+    }
+    
     
 });
 
