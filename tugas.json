@@ -1,0 +1,16 @@
+{
+    "listTugas":[
+        
+        {
+            "matkul":"IF3260 PBD",
+            "judul": "latihan",
+            "deadline": "besok"
+        },
+
+        {
+            "matkul":"IF6969 kedua",
+            "judul": "latihan kedua",
+            "deadline": "besok lagi ya"
+        }
+    ] 
+}
