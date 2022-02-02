@@ -12,7 +12,7 @@ const client = new Discord.Client({
     ]
 });
 
-
+moment.tz.setDefault("Asia/Jakarta");
 
 
 client.on('ready',() => {
