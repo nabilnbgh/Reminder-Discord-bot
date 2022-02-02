@@ -12,7 +12,6 @@ const client = new Discord.Client({
     ]
 });
 
-moment.tz.setDefault("Asia/Jakarta");
 
 
 client.on('ready',() => {
@@ -20,9 +19,8 @@ client.on('ready',() => {
     console.log("client is ready");
     var sendChannel = client.channels.cache.find(channel => channel.id === '935200576273264650')
     var hour = date.getMinutes();
-    if(hour === 4){
-        sendChannel.send("<@330683045684445190> Login Hoyolab");
-    }
+    sendChannel.send("<@330683045684445190> Login Hoyolab");
+
     
     
 });
