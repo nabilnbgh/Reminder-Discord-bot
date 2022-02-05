@@ -2,15 +2,27 @@
     "listTugas":[
         
         {
-            "matkul":"IF3260 PBD",
-            "judul": "latihan",
-            "deadline": "besok"
+            "matkul":"PPL",
+            "judul": "Deadline Sprint 1",
+            "deadline": "11 Februari 2022"
         },
 
         {
-            "matkul":"IF6969 kedua",
-            "judul": "latihan kedua",
-            "deadline": "besok lagi ya"
+            "matkul":"Grafkom ",
+            "judul": "Kuis 2",
+            "deadline": "16 Februari 2022"
+        },
+        
+        {
+            "matkul":"Socif ",
+            "judul": "Membaca buku pengembangan diri",
+            "deadline": "16 Februari 2022"
+        },
+        
+        {
+            "matkul":"ML ",
+            "judul": "Tucil 1",
+            "deadline": "20 Februari 2022"
         }
     ] 
 }
