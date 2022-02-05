@@ -19,7 +19,7 @@ client.on('ready',() => {
     console.log("client is ready");
     var sendChannel = client.channels.cache.find(channel => channel.id === '935200576273264650')
     var hour = date.getMinutes();
-    sendChannel.send("<@330683045684445190> Login Hoyolab ya");
+    // sendChannel.send("<@330683045684445190> Login Hoyolab ya");
 
     
     
@@ -31,7 +31,29 @@ client.on('messageCreate',(message) => {
         const command = args.shift().toLowerCase();
 
         if(command === "addtask"){
-            message.channel.send('Pongcrazy');
+            fs.readFile('./tugas.json','utf-8',(err,jsonString) =>{
+                if(err){
+                    console.log(err)
+                }
+                else{
+                    const parseData = JSON.parse(jsonString);
+                    parseData.listTugas.push({
+                        matkul:args[0],
+                        judul: args[1],
+                        deadline: args[2]
+                    });
+                    json = JSON.stringify(parseData);
+                    fs.writeFile('./tugas.json',json,'utf-8',error =>{
+                        if(error){
+                            console.log(error);
+                        }
+                        else{
+                            console.log("Add success");
+                        }
+                    });
+                }
+            });
+
         }
         else if(command === "listtask"){
             fs.readFile('./tugas.json','utf-8',(err,jsonString) =>{
