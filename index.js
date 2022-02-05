@@ -19,7 +19,7 @@ client.on('ready',() => {
     console.log("client is ready");
     var sendChannel = client.channels.cache.find(channel => channel.id === '935200576273264650')
     var hour = date.getMinutes();
-    // sendChannel.send("<@330683045684445190> Login Hoyolab ya");
+    sendChannel.send("<@330683045684445190> Login Hoyolab ya");
 
     
     
